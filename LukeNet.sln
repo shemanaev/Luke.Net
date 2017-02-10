@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LukeNet", "Luke.Net\LukeNet.csproj", "{D3D9575E-E802-4CE8-929E-C2A077424A4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LukePlugin", "LukePlugin\LukePlugin.csproj", "{BC06AE11-7BE6-4E54-A7D1-8BC42C911C09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassFinder", "ClassFinder\ClassFinder.csproj", "{F387B20F-1F97-46B9-9A98-564A74D51F22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyzerToolPlugin", "AnalyzerToolPlugin\AnalyzerToolPlugin.csproj", "{2B944AA2-2AFF-4986-9007-DE6E8C16C9A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3D9575E-E802-4CE8-929E-C2A077424A4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D9575E-E802-4CE8-929E-C2A077424A4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D9575E-E802-4CE8-929E-C2A077424A4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D9575E-E802-4CE8-929E-C2A077424A4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC06AE11-7BE6-4E54-A7D1-8BC42C911C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC06AE11-7BE6-4E54-A7D1-8BC42C911C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC06AE11-7BE6-4E54-A7D1-8BC42C911C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC06AE11-7BE6-4E54-A7D1-8BC42C911C09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F387B20F-1F97-46B9-9A98-564A74D51F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F387B20F-1F97-46B9-9A98-564A74D51F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F387B20F-1F97-46B9-9A98-564A74D51F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F387B20F-1F97-46B9-9A98-564A74D51F22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B944AA2-2AFF-4986-9007-DE6E8C16C9A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B944AA2-2AFF-4986-9007-DE6E8C16C9A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B944AA2-2AFF-4986-9007-DE6E8C16C9A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B944AA2-2AFF-4986-9007-DE6E8C16C9A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

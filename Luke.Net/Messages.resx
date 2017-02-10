@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="NoIndex">
+		<value>FAILED: No index, or index is closed. Reopen it.</value>
+	</data>
+	<data name="Readonly">
+		<value>FAILED: Read-Only index.</value>
+	</data>
+	<data name="MenuBrowse">
+		<value>Browse term docs</value>
+	</data>
+	<data name="MenuShowAll">
+		<value>Show all term docs</value>
+	</data>
+	<data name="MenuShowTV">
+		<value>Field's Term Vector</value>
+	</data>
+	<data name="StatusIndexName">
+		<value>Index name: </value>
+	</data>
+	<data name="InvalidPath">
+		<value>Invalid path, or not a Lucene index.</value>
+	</data>
+	<data name="IndexLockedRo">
+		<value>Index is locked and Read-Only. Open for read-write and 'Force unlock'.</value>
+	</data>
+	<data name="IndexLocked">
+		<value>Index is locked. Try 'Force unlock' when opening.</value>
+	</data>
+	<data name="IndexOpened">
+		<value>Index successfully open.</value>
+	</data>
+	<data name="Error">
+		<value>Error</value>
+	</data>
+	<data name="AnalyzerNotFound">
+		<value>Analyzer '{0}' not found. Using StandardAnalyzer. </value>
+	</data>
+	<data name="EmptyQuery">
+		<value>FAILED: Empty query.</value>
+	</data>
+	<data name="NoResults">
+		<value>No Results</value>
+	</data>
+	<data name="DocNumberRange">
+		<value>Document number outside valid range.</value>
+	</data>
+	<data name="DocDeleted">
+		<value>This document has been deleted and is not available.</value>
+	</data>
+	<data name="NoTerms">
+		<value>No terms?!</value>
+	</data>
+	<data name="IndexOptimized">
+		<value>Index successfully optimized</value>
+	</data>
+	<data name="DocNotSelected">
+		<value>FAILED: need to select document first!</value>
+	</data>
+	<data name="CollectingTerms">
+		<value>Collecting terms...</value>
+	</data>
+	<data name="NoFieldName">
+		<value>FAILED: Field name is required.</value>
+	</data>
+	<data name="FieldNotAvailable">
+		<value>&lt;not available&gt;</value>
+	</data>
+	<data name="NoTV">
+		<value>Term Vector not available</value>
+	</data>
+	<data name="EmptyQuery">
+		<value>&lt;Empty query&gt;</value>
+	</data>
+</root>
