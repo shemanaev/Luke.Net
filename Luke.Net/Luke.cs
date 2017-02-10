@@ -909,7 +909,7 @@ namespace Lucene.Net.LukeNet
             // 
             // labelInfoDocNum
             // 
-            this.labelInfoDocNum.Location = new System.Drawing.Point(56, 152);
+            this.labelInfoDocNum.Location = new System.Drawing.Point(56, 150);
             this.labelInfoDocNum.Name = "labelInfoDocNum";
             this.labelInfoDocNum.Size = new System.Drawing.Size(336, 13);
             this.labelInfoDocNum.TabIndex = 8;
@@ -1047,9 +1047,9 @@ namespace Lucene.Net.LukeNet
             this.groupTerm.Controls.Add(this.labelTerm);
             this.groupTerm.Controls.Add(this.buttonFirstTerm);
             this.groupTerm.Controls.Add(this.labelBrowseHint);
-            this.groupTerm.Location = new System.Drawing.Point(224, 8);
+            this.groupTerm.Location = new System.Drawing.Point(288, 8);
             this.groupTerm.Name = "groupTerm";
-            this.groupTerm.Size = new System.Drawing.Size(520, 136);
+            this.groupTerm.Size = new System.Drawing.Size(456, 136);
             this.groupTerm.TabIndex = 1;
             this.groupTerm.TabStop = false;
             this.groupTerm.Text = "Browse by term";
@@ -1244,7 +1244,7 @@ namespace Lucene.Net.LukeNet
             this.groupDocNumber.Controls.Add(this.labelBrowseDoc);
             this.groupDocNumber.Location = new System.Drawing.Point(8, 8);
             this.groupDocNumber.Name = "groupDocNumber";
-            this.groupDocNumber.Size = new System.Drawing.Size(208, 136);
+            this.groupDocNumber.Size = new System.Drawing.Size(274, 136);
             this.groupDocNumber.TabIndex = 0;
             this.groupDocNumber.TabStop = false;
             this.groupDocNumber.Text = "Browse by doc. number";
@@ -1264,7 +1264,7 @@ namespace Lucene.Net.LukeNet
             this.buttonDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonDelete.ImageIndex = 3;
             this.buttonDelete.ImageList = this.imageList;
-            this.buttonDelete.Location = new System.Drawing.Point(128, 104);
+            this.buttonDelete.Location = new System.Drawing.Point(196, 104);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(72, 23);
             this.buttonDelete.TabIndex = 7;
@@ -1277,7 +1277,7 @@ namespace Lucene.Net.LukeNet
             // 
             this.labelIndDocs.AutoSize = true;
             this.labelIndDocs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelIndDocs.Location = new System.Drawing.Point(178, 37);
+            this.labelIndDocs.Location = new System.Drawing.Point(200, 37);
             this.labelIndDocs.Name = "labelIndDocs";
             this.labelIndDocs.Size = new System.Drawing.Size(14, 13);
             this.labelIndDocs.TabIndex = 5;
@@ -1285,7 +1285,7 @@ namespace Lucene.Net.LukeNet
             // 
             // buttonNextDoc
             // 
-            this.buttonNextDoc.Location = new System.Drawing.Point(148, 32);
+            this.buttonNextDoc.Location = new System.Drawing.Point(170, 32);
             this.buttonNextDoc.Name = "buttonNextDoc";
             this.buttonNextDoc.Size = new System.Drawing.Size(24, 23);
             this.buttonNextDoc.TabIndex = 4;
@@ -1294,15 +1294,15 @@ namespace Lucene.Net.LukeNet
             // 
             // textDocNum
             // 
-            this.textDocNum.Location = new System.Drawing.Point(98, 33);
+            this.textDocNum.Location = new System.Drawing.Point(92, 33);
             this.textDocNum.Name = "textDocNum";
-            this.textDocNum.Size = new System.Drawing.Size(48, 20);
+            this.textDocNum.Size = new System.Drawing.Size(76, 20);
             this.textDocNum.TabIndex = 3;
             this.textDocNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textDocNum_KeyPress);
             // 
             // buttonPrevDoc
             // 
-            this.buttonPrevDoc.Location = new System.Drawing.Point(72, 32);
+            this.buttonPrevDoc.Location = new System.Drawing.Point(66, 32);
             this.buttonPrevDoc.Name = "buttonPrevDoc";
             this.buttonPrevDoc.Size = new System.Drawing.Size(24, 23);
             this.buttonPrevDoc.TabIndex = 2;
@@ -1313,7 +1313,7 @@ namespace Lucene.Net.LukeNet
             // 
             this.labelZeroDoc.AutoSize = true;
             this.labelZeroDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelZeroDoc.Location = new System.Drawing.Point(56, 37);
+            this.labelZeroDoc.Location = new System.Drawing.Point(50, 37);
             this.labelZeroDoc.Name = "labelZeroDoc";
             this.labelZeroDoc.Size = new System.Drawing.Size(14, 13);
             this.labelZeroDoc.TabIndex = 1;
@@ -1865,6 +1865,11 @@ namespace Lucene.Net.LukeNet
         #endregion Luke Events
 
         #region Resizing
+        private void ApplyAutoSize(ListView lv)
+        {
+            lv.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+            lv.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+        }
         private void tabDocuments_Resize(object sender, System.EventArgs e)
         {
             ResizeLastListColumn(listDocFields);
@@ -2800,6 +2805,7 @@ namespace Lucene.Net.LukeNet
             }
 
             listFields.EndUpdate();
+            ApplyAutoSize(listFields);
             comboFields.SelectedIndex = 0;
             comboTerms.SelectedIndex = 0;
         }
@@ -2905,6 +2911,7 @@ namespace Lucene.Net.LukeNet
             finally
             {
                 listSearch.EndUpdate();
+                ApplyAutoSize(listSearch);
             }
         }
 
@@ -2963,6 +2970,7 @@ namespace Lucene.Net.LukeNet
             finally
             {
                 listTerms.EndUpdate();
+                ApplyAutoSize(listTerms);
             }
         }
 
@@ -3037,6 +3045,7 @@ namespace Lucene.Net.LukeNet
             finally
             {
                 listDocFields.EndUpdate();
+                ApplyAutoSize(listDocFields);
             }
         }
 
