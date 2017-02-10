@@ -28,3 +28,14 @@ test: off
 artifacts:
   - path: 'LukeNet.zip'
     name: release_archive
+
+deploy:
+- provider: GitHub
+  auth_token:
+    secure: DI098SO7LeSl0fwnw3kqTm7mdyyH+84meGFWzam0ksoRy4sd0ng8dEsrjV+ub1nm
+  tag: '$(APPVEYOR_REPO_TAG_NAME)'
+  artifact: release_archive
+  draft: true
+  force_update: true
+  on:
+    appveyor_repo_tag: true
